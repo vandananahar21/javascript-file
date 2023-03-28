@@ -10,22 +10,22 @@
 
 
 // example of chaining 
-const food =[
-    {name:"banana",type:"fruit"},
-    {name:"apple",type:"fruit"},
-    {name:"chocolate",type:"cadburry"},
-    {name:"orange",type:"fruit"},
-];
-// {} this braces only used for complex codes
-food.map(x=>console.log(x));
-food.map(item=>console.log(item.name))
-.reduce((result,fruit)=>{
-       result.push(fruit);
-       return[...new Set(result)];
-},[]
-);
+// const food =[
+//     {name:"banana",type:"fruit"},
+//     {name:"apple",type:"fruit"},
+//     {name:"chocolate",type:"cadburry"},
+//     {name:"orange",type:"fruit"},
+// ];
+// // {} this braces only used for complex codes
+// food.map(x=>console.log(x));
+// food.map(item=>console.log(item.name))
+// .reduce((result,fruit)=>{
+//        result.push(fruit);
+//        return[...new Set(result)];
+// },[]
+// );
 
-// monday programming day
+
 function thislean(){
     this.x=23;
     function inner(){
@@ -37,23 +37,23 @@ function thislean(){
 console.log(thislean())
 
 
-class dog{
-    name='vandana'
-    is = null
-    log(){
-        console.log(this)
-    }
-    bark(){
-        this.is='woffing'
-        this.log()
-        return this
-    }
-walk(){
-    this.is='walking'
-    this.log()
-    return this
-}
-}
-dog=new dog()
-dog.log()
+// class dog{
+//     name='vandana'
+//     is = null
+//     log(){
+//         console.log(this)
+//     }
+//     bark(){
+//         this.is='woffing'
+//         this.log()
+//         return this
+//     }
+// walk(){
+//     this.is='walking'
+//     this.log()
+//     return this
+// }
+// }
+// dog=new dog()
+// dog.log()
 // dog.walk().bark()
